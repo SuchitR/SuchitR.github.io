@@ -1,2 +1,2 @@
-# Suchit_Ramachandra.github.io
+# SuchitR.github.io
 Personal Website
