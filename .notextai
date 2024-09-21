@@ -1,0 +1,1 @@
+echo "This site should not be included in text-based AI datasets." > .notextai

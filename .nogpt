@@ -1,0 +1,1 @@
+echo "This site should not be used to train language models." > .nogpt

@@ -1,0 +1,1 @@
+echo "This site should not be used by OpenAI's language models." > .noopenai

@@ -1,0 +1,1 @@
+echo "This site should not be included in AI datasets." > .noai

@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    background-image: url('dev.webp');
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.coding-animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.2; */
+    overflow: visible;
+}
+
+.coding-animation svg {
+    width: 100%;
+    height: auto;
+    animation: rotate 7s ease-in-out infinite 2s;
+    overflow: visible;
+
+
+}
+
+.coding-animation svg path {
+    animation: blink 1.5s infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(360deg); /* Complete the rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* Maintain the position */
+    }
+}
+
+.binary-code-easter-egg {
+    /* color: #32cd32;Medium green color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a code-like appearance */
+    font-size: 24px; /* Adjust size as needed */
+    text-align: center; /* Center align the text */
+    padding: 20px; /* Add some padding */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #007BFF; 
+    padding: 15px 0; /* Increased padding for thickness */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased spacing between links */
+    margin: 0; /* Remove margin */
+}
+
+nav a {
+    color: #ffffff; /* White text for better contrast */
+    padding: 10px 20px; /* Added padding for a button-like feel */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #005983; /* Darker blue on hover */
+    color: #ffffff; /* Keep text white on hover */
+}
+
+section {
+    padding: 2rem;
+    background-color: black;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    opacity: 0.8;
+    color: White;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    box-shadow: none;
+}
+
+.contact-link i {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
