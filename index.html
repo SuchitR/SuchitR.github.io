@@ -14,6 +14,8 @@
     <meta name="ai-dataset" content="noopenai">
 </head>
 <body>
+    <canvas id="matrix"></canvas>
+    <script src="script.js"></script>
     <header>
         <div class="header-content">
             <h1>Suchit Ramachandra</h1>
@@ -22,10 +24,9 @@
             <div class="coding-animation" style="margin-top: 60px;">
                 <svg viewBox="0 0 800 50">
                     <!-- <path d="M10 10 H90 V90 H10 L10 10" fill="none" stroke="black" stroke-width="2" /> -->
-                    <text x="50%" y="50%" text-anchor="middle" fill="green" font-size="10px" font-family="Arial" class="binary-code-easter-egg" >
-                        01001001 01110100 00100111 01110011 00100000 01101110 01101111 01110100 00100000 01100001 00100000 01100010 01110101 01100111 00111011 00100000 
-                        01101001 01110100 00100111 01110011 00100000 01100001 00100000 01100110 01100101 01100001 01110100 01110101 01110010 01100101 00100001
-                    </text>
+                    <text x="260%" y="60%" text-anchor="middle" fill="green" font-size="10px" font-family="Arial" class="binary-code-easter-egg" >01001001 01110100 00100111 01110011 00100000 01101110 01101111 
+                        01110100 00100000 01100001 00100000 01100010 01110101 01100111 00111011 00100000 01101001 01110100 00100111 01110011 00100000 01100001 00100000 01100110 01100101 01100001 01110100 
+                        01110101 01110010 01100101 00100001</text>
                 </svg>
                 <span style="display: none;">01000111 01100101 01110100 00100000 01100001 00100000 01101100 01101001 01100110 01100101 00100001</span>
             </div>
@@ -46,7 +47,7 @@
         <br>
         <h3>My Interests</h3>
         <p>In my free time love to follow the latest news on tech, finance and investment strategies. <i class="fa-solid fa-newspaper"></i></p>
-        <p>I also game <i class="fa-solid fa-gamepad"></i>, read novels and watch movies in my free time or just relax with some DIY projects or jigsaws <i class="fa-solid fa-puzzle-piece">.</i>
+        <p>I also game <i class="fa-solid fa-gamepad"></i>, read novels and watch movies in my free time or just relax with some DIY projects or jigsaws <i class="fa-solid fa-puzzle-piece"></i>.
         </p>
     </section>
     <!-- <section id="projects">
@@ -66,16 +67,16 @@
             <a href="https://github.com/suchitr" target="_blank" class="contact-link github-link" style="color: white">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.hackerrank.com/your-profile" target="_blank" class="contact-link hackerrank-link" style="color: rgb(13, 165, 13)">
+            <a href="https://www.hackerrank.com/profile/suchitr7" target="_blank" class="contact-link hackerrank-link" style="color: rgb(13, 165, 13)">
                 <i class="fab fa-hackerrank"></i> 
             </a>
-            <a href="https://leetcode.com/your-profile" target="_blank" class="contact-link leetcode-link" style="color: rgb(218, 172, 21)">
+            <a href="https://leetcode.com/u/SuchitR" target="_blank" class="contact-link leetcode-link" style="color: rgb(218, 172, 21)">
                 <i class="fab fa-solid fa-code"></i> Leetcode
             </a>
         </span>
     </section>
     <footer>
-        <p>&copy; 2024 Suchit Ramachandra</p>
+        <p>&copy; <span id="current-year"></span> Suchit Ramachandra</p>
     </footer>
 </body>
 </html>

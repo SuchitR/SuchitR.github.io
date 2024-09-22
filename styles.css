@@ -36,40 +36,46 @@ header {
 .coding-animation svg {
     width: 100%;
     height: auto;
-    animation: rotate 7s ease-in-out infinite 2s;
+    animation: transition 9s ease-in-out infinite 15s;
     overflow: visible;
-
-
 }
 
-.coding-animation svg path {
-    animation: blink 1.5s infinite alternate;
-}
-
-@keyframes rotate {
+@keyframes transition {
     0% {
-        transform: rotate(0deg);
+        transform: translateX(0%); 
+        opacity: 1; 
+    }
+    10% {
+        opacity: 0.7; 
+    }
+    50% {
+        opacity: 0.4; 
     }
     80% {
-        transform: rotate(360deg); /* Complete the rotation */
+        opacity: 0.7; 
     }
     100% {
-        transform: rotate(360deg); /* Maintain the position */
+        transform: translateX(-420%); 
+        opacity: 1;
     }
 }
 
 .binary-code-easter-egg {
     /* color: #32cd32;Medium green color */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for a code-like appearance */
-    font-size: 24px; /* Adjust size as needed */
-    text-align: center; /* Center align the text */
-    padding: 20px; /* Add some padding */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px; 
+    text-align: center; 
+    padding: 20px;
 }
 
-/* Navigation styles */
+header, nav {
+    position: relative; 
+    z-index: 2; /* Higher z-index to ensure they are above the canvas */
+}
+
 nav {
     background-color: #007BFF; 
-    padding: 15px 0; /* Increased padding for thickness */
+    padding: 15px 0; 
 }
 
 nav ul {
@@ -77,20 +83,20 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 30px; /* Increased spacing between links */
-    margin: 0; /* Remove margin */
+    gap: 30px;
+    margin: 0;
 }
 
 nav a {
-    color: #ffffff; /* White text for better contrast */
-    padding: 10px 20px; /* Added padding for a button-like feel */
-    border-radius: 5px; /* Rounded corners */
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    background-color: #005983; /* Darker blue on hover */
-    color: #ffffff; /* Keep text white on hover */
+    background-color: #005983; 
+    color: #ffffff; 
 }
 
 section {
@@ -124,3 +130,11 @@ footer {
     font-size: 22px;
 }
 
+#matrix {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
