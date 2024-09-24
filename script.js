@@ -30,13 +30,15 @@ function drawMatrix() {
 document.addEventListener("DOMContentLoaded", function() {
     const navbar = document.querySelector("nav");
     const header = document.querySelector("header");
+    const footer = document.querySelector("footer");
 
     document.getElementById("current-year").textContent = new Date().getFullYear();
     setTimeout(() => {
         setInterval(drawMatrix, 50);
         navbar.style.backgroundColor = "rgba(0, 90, 30, 0.9)";
         header.style.opacity = "0.9";
-    }, 30400); 
+        footer.style.opacity = "0.7";
+    }, 22000); 
 });
 
 

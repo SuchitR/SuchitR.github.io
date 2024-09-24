@@ -1,3 +1,8 @@
+:root {
+    --animation-duration: 10s;
+    --delay: 10s;
+  }
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -36,36 +41,8 @@ header {
 .coding-animation svg {
     width: 100%;
     height: auto;
-    animation: transition 15.2s linear 1 15s;
+    animation: transition 12s linear 1 var(--delay);
     overflow: visible;
-}
-
-@keyframes transition {
-    0% {
-        transform: translateX(-420%); 
-        opacity: 1; 
-    }
-    10% {
-        opacity: 0.7; 
-    }
-    50% {
-        opacity: 0.4; 
-    }
-    80% {
-        opacity: 0.7; 
-    }
-    100% {
-        transform: translateX(0%); 
-        opacity: 1;
-    }
-}
-
-.binary-code-easter-egg {
-    /* color: #32cd32;Medium green color */
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px; 
-    text-align: center; 
-    padding: 20px;
 }
 
 .loading-bar {
@@ -76,7 +53,27 @@ header {
     height: 100%;
     background-color: rgba(0, 120, 0, 0.9);
     transform: translateX(-100%); /* Start off-screen */
-    animation: load 14.7s forwards 1 16s; 
+    animation: load 10s forwards 1 12.5s; 
+}
+
+@keyframes transition {
+    0% {
+        transform: translateX(-420%); 
+        opacity: 0.3; 
+    }
+    10% {
+        opacity: 0.5; 
+    }
+    50% {
+        opacity: 0.7; 
+    }
+    80% {
+        opacity: 0.7; 
+    }
+    100% {
+        transform: translateX(0%); 
+        opacity: 1;
+    }
 }
 
 @keyframes load {
@@ -96,10 +93,19 @@ header {
     }
 }
 
+.binary-code-easter-egg {
+    /* color: #32cd32;Medium green color */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px; 
+    text-align: center; 
+    padding: 20px;
+}
+
 nav {
     background-color: #007BFF; 
     padding: 15px 0; 
-    position: relative; 
+    position: sticky;
+    top: 0;
     z-index: 2; /* Higher z-index to ensure they are above the canvas */
 }
 
@@ -142,6 +148,7 @@ footer {
     padding: 1rem 0;
     background-color: #333;
     color: white;
+    position: relative;;
 }
 
 #about #contact {
